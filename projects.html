@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Cole Beitscher</title>
+  <style>
+    :root {
+      --mint: #30be66;
+      --dark-gray: #1e1e1e;
+      --light-gray: #333;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--dark-gray);
+      color: var(--white);
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    header {
+      background: var(--mint);
+      color: var(--dark-gray);
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: var(--light-gray);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: var(--mint);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .project {
+      margin-bottom: 1.5rem;
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--mint);
+    }
+
+    .project-desc {
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--light-gray);
+      color: var(--mint);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projects</h1>
+    <p>Selected academic and personal projects</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <main>
+<section class="project">
+  <div class="project-title">Pairs Trading Backtesting Engine</div>
+  <div class="project-desc">
+    Developed a backtesting engine for pairs trading strategies using historical price data. Implemented cointegration tests (Engle-Granger, Augmented Dickey-Fuller) and trading signal generation in Python (pandas, statsmodels).
+    <br />
+    <a href="https://github.com/colebe/pairs-trading" target="_blank" style="color: var(--mint); font-weight: bold;">View on GitHub</a>
+  </div>
+</section>
+  </main>
+</body>
+</html>

@@ -23,13 +23,13 @@
       background-color: var(--dark-gray);
       color: var(--white);
       line-height: 1.6;
+      text-align: center;
     }
 
     header {
       background: var(--mint);
       color: var(--dark-gray);
       padding: 2rem 1rem;
-      text-align: center;
     }
 
     header h1 {
@@ -70,11 +70,23 @@
       background: var(--light-gray);
       color: var(--mint);
     }
+
+    .contact-links a {
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      color: var(--mint);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
   </style>
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
 </head>
 <body>
   <header>
@@ -83,25 +95,22 @@
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
   </nav>
 
   <main>
-    <section id="about">
+    <section id="About">
       <h2>About Me</h2>
       <p>I am a student of applied mathematics with a minor in computer science, interested in actuarial science, data science, machine learning, and quantitative finance. This is my personal website to showcase my work and interests.</p>
     </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Coming soon: A collection of my academic and personal projects in actuarial science, data analysis, and programming.</p>
-    </section>
-
     <section id="contact">
       <h2>Contact</h2>
-      <p>Feel free to reach out via email: <a href="mailto:beitscherc@gmail.com" style="color: var(--mint);">beitscherc@gmail.com</a></p>
+      <p>Email: <a href="mailto:beitscherc@gmail.com" style="color: var(--mint);">beitscherc@gmail.com</a></p>
+      <div class="contact-links">
+        <a href="https://github.com/colebe" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/colebeitscher" target="_blank">LinkedIn</a>
+      </div>
     </section>
   </main>
 </body>
